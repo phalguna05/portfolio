@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans&family=Didact+Gothic");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Didact+Gothic&family=Mulish:wght@200&Raleway:wght");
 
 body {
   margin: 0;
@@ -7,8 +7,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a122a;
+  background-color: whitesmoke;
+  background-image: url("./components/landing/background.svg");
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 body::-webkit-scrollbar {
   width: "10px";
 }

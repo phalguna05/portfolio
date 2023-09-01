@@ -1,10 +1,14 @@
 import React from "react";
 import About from "../about";
+import Contact from "../contact";
+import Experience from "../experience";
 import { PageContainer } from "../globalStyles";
 import Navbar from "../navbar";
+import Projects from "../projects";
 import { icons, urls } from "./constants";
 import {
   Caption,
+  CompleteContainer,
   LandingContainer,
   LearnMoreButton,
   SalutaionText,
@@ -16,7 +20,7 @@ import {
 
 const Landing = () => {
   return (
-    <>
+    <CompleteContainer>
       <PageContainer>
         <Navbar />
         <LandingContainer>
@@ -46,7 +50,10 @@ const Landing = () => {
         </LandingContainer>
       </PageContainer>
       <About />
-    </>
+      <Experience />
+      <Projects />
+      <Contact />
+    </CompleteContainer>
   );
 };
 
