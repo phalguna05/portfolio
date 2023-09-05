@@ -6,7 +6,6 @@ const ProjectsContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  flexDirection: "column",
 });
 
 const ScrollableContainer = styled("div")({
@@ -16,12 +15,11 @@ const ScrollableContainer = styled("div")({
   marginTop: "5vh",
   overflowY: "auto",
   display: "flex",
-
+  alignItems: "center",
   flexDirection: "column",
   "@media screen and (max-width:720px)": {
     width: "95%",
     padding: "10px",
-    alignItems: "center",
   },
 });
 
@@ -50,11 +48,6 @@ const ProjectBox = styled("div")({
     borderRadius: "8px",
     boxShadow: "0 0 10px #fff",
   },
-
-  ":nth-child(2)": {
-    alignSelf: "flex-end",
-  },
-  ":nth-child(1)": {},
 });
 
 const ImageContainer = styled("div")({

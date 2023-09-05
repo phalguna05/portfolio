@@ -3,21 +3,22 @@ import "../../index.css";
 
 const AboutContainer = styled("div")({
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   width: "100%",
   height: "100%",
+  alignItems: "center",
   justifyContent: "space-around",
 });
 const HeadingContainer = styled("div")({
-  width: "100%",
+  width: "30%",
+  height: "100%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  marginTop: "7vh",
 });
 
 const ContentContainer = styled("div")({
-  width: "100%",
+  width: "70%",
   height: "95%",
   display: "flex",
   alignItems: "center",
@@ -39,7 +40,7 @@ const LeftTextContainer = styled("div")({
 });
 
 const ContentBox = styled(Paper)({
-  width: "60%",
+  width: "80%",
   height: "60%",
   borderRadius: "14px",
   display: "flex",
@@ -72,11 +73,14 @@ const RightTextContainer = styled("div")({
   },
 });
 const Heading = styled(Typography)({
-  fontSize: "2vw",
-  fontFamily: "'Raleway', sans-serif",
-  color: "#87D68D",
+  fontSize: "5vw",
+  fontFamily: "'Inter', sans-serif",
+  color: "transparent",
   wordBreak: "break-word",
   fontWeight: "bold",
+  transform: "rotate(-90deg)",
+  backgroundImage: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
+  backgroundClip: "text",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
   },
@@ -88,7 +92,7 @@ const Content = styled(Typography)({
   color: "black",
   fontWeight: "bold",
   textAlign: "left",
-  opacity: "1",
+  fontFamily: "'Inter', sans-serif",
   wordBreak: "break-word",
   "@media screen and (max-width:720px)": {
     fontSize: "3vw",

@@ -1,16 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Didact+Gothic&family=Mulish:wght@200&Raleway:wght");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: whitesmoke;
-  background-image: url("./components/landing/background.svg");
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: linear-gradient(
+    70deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(199deg 49% 99%) 11%,
+    hsl(199deg 50% 97%) 22%,
+    hsl(199deg 50% 96%) 33%,
+    hsl(198deg 50% 94%) 44%,
+    hsl(198deg 51% 93%) 56%,
+    hsl(198deg 51% 91%) 67%,
+    hsl(198deg 51% 89%) 78%,
+    hsl(198deg 52% 88%) 89%,
+    hsl(198deg 52% 86%) 100%
+  );
+  background: "linear-gradient(0deg, hsla(216, 41%, 79%, 1) 0%, hsla(186, 33%, 94%, 1) 100%)";
 }
 
 body::-webkit-scrollbar {

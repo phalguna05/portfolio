@@ -17,7 +17,7 @@ const TitleContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
   wordBreak: "break-word",
-  width: "50%",
+  width: "60%",
   marginLeft: "5vw",
   alignItems: "flex-start",
   marginTop: "28vh",
@@ -35,7 +35,7 @@ const SalutaionText = styled(Typography)({
   fontWeight: "bold",
   color: "#364156",
   opacity: "0.9",
-  fontFamily: "'Raleway', sans-serif",
+  fontFamily: "'Inter', sans-serif",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
   },
@@ -45,7 +45,7 @@ const Caption = styled(Typography)({
   fontWeight: "bold",
   color: "#364156",
   opacity: "0.8",
-  fontFamily: "'Raleway', sans-serif",
+  fontFamily: "'Inter', sans-serif",
   marginBottom: "8vh",
   "@media screen and (max-width:720px)": {
     fontSize: "3vw",
@@ -53,21 +53,23 @@ const Caption = styled(Typography)({
 });
 const Title = styled(Typography)({
   fontSize: "3.7vw",
-  fontFamily: "'Alegreya Sans', sans-serif",
-  color: "#11151C",
+  fontFamily: "'Inter', sans-serif",
   wordBreak: "break-word",
   marginBottom: "2vh",
   fontWeight: "bold",
+  backgroundImage: "linear-gradient(45deg, #553c9a, #ee4b2b)",
+  backgroundClip: "text",
+  color: "transparent",
   "@media screen and (max-width:720px)": {
     fontSize: "8vw",
   },
 });
 
 const LearnMoreButton = styled(Button)({
-  fontFamily: "'Raleway', sans-serif",
   fontWeight: "bold",
   fontSize: "1vw",
   color: "#364156",
+  fontFamily: "'Inter', sans-serif",
   opacity: "1",
   textTransform: "capitalize",
   boxShadow:
@@ -95,8 +97,8 @@ const SocialsContainer = styled("div")({
 });
 
 const SocialButton = styled(IconButton)({
-  color: "white",
-  opacity: "0.8",
+  color: "#53FFEB",
+  opacity: "1",
   ":hover": {
     opacity: "1",
     backgroundColor: "#50FFB1",

@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .App {
   text-align: center;
-  background-image: url("../src/components/landing/background.svg");
+  font-family: "Inter", sans-serif;
   height: 100%;
   background-size: cover;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Content } from "../about/styles";
+import { Content, Heading, HeadingContainer } from "../about/styles";
 import { PageContainer } from "../globalStyles";
 import { projects } from "./constants";
 import {
@@ -15,9 +15,9 @@ const Projects = () => {
   return (
     <PageContainer>
       <ProjectsContainer>
-        {/* <Heading style={{ marginTop: "8vh", marginBottom: "2vh" }}>
-          Projects
-        </Heading> */}
+        <HeadingContainer>
+          <Heading>Projects</Heading>
+        </HeadingContainer>
         <ScrollableContainer>
           {projects.map((project) => (
             <ProjectBox>

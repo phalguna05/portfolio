@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../about";
+import Certifications from "../certifications";
 import Contact from "../contact";
 import Experience from "../experience";
 import { PageContainer } from "../globalStyles";
@@ -31,14 +32,23 @@ const Landing = () => {
               A dedicated and innovative software engineer with a passion for
               crafting efficient and user-centric web applications.
             </Caption>
-            <LearnMoreButton variant="outlined">
+            <LearnMoreButton
+              variant="outlined"
+              onClick={() =>
+                window.scroll({
+                  left: 0,
+                  top: window.innerHeight,
+                  behavior: "smooth",
+                })
+              }
+            >
               Learn more about me...
             </LearnMoreButton>
           </TitleContainer>
           <SocialsContainer>
             {icons.map((icon, idx) => (
               <SocialButton
-                sx={{ color: "white", opacity: "0.8" }}
+                sx={{ color: "#015788" }}
                 onClick={() => {
                   window.open(urls[idx], "_blank");
                 }}
@@ -52,6 +62,7 @@ const Landing = () => {
       <About />
       <Experience />
       <Projects />
+      <Certifications />
       <Contact />
     </CompleteContainer>
   );

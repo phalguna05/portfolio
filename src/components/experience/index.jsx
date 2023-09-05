@@ -2,13 +2,13 @@ import React from "react";
 import { Content } from "../about/styles";
 import { PageContainer } from "../globalStyles";
 import { experiences } from "./constants";
-import Exp from "./exp.png";
 import {
   ExperienceBox,
   ExperienceContainer,
-  ImgContainer,
+  Heading,
   LeftContainer,
   RightContainer,
+  Tag,
 } from "./styles";
 
 const Experience = () => {
@@ -16,7 +16,7 @@ const Experience = () => {
     <PageContainer>
       <ExperienceContainer>
         <LeftContainer>
-          <ImgContainer src={Exp} />
+          <Heading>Experience</Heading>
         </LeftContainer>
         <RightContainer>
           {/* <Heading style={{ marginBottom: "0px" }}>Experience</Heading> */}
@@ -32,6 +32,17 @@ const Experience = () => {
               <Content style={{ color: "black" }}>
                 {experience.description}
               </Content>
+              <div
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  marginTop: "15px",
+                }}
+              >
+                {experience.skills.map((skill) => (
+                  <Tag>{skill}</Tag>
+                ))}
+              </div>
             </ExperienceBox>
           ))}
         </RightContainer>

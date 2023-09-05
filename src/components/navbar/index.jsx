@@ -9,7 +9,7 @@ import {
   NavItemsContainer,
   NavLink,
 } from "./styles";
-const Links = ["About", "Experience", "Projects", "Contact"];
+const Links = ["About", "Experience", "Projects", "Certifications", "Contact"];
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);

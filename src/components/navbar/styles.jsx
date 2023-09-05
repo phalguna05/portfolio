@@ -49,7 +49,7 @@ const NavItemsContainer = styled("div")({
 
 const LogoContainer = styled("img")({
   cursor: "pointer",
-  width: "5vw",
+  width: "4vw",
   height: "5vh",
   ":hover": {
     boxShadow:
@@ -67,6 +67,7 @@ const NavLink = styled(Typography)({
   cursor: "pointer",
   padding: "8px",
   color: "#020122",
+  fontFamily: "'Inter', sans-serif",
   opacity: "0.8",
   ":hover": {
     backgroundColor: "#50FFB1",

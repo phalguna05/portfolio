@@ -6,7 +6,6 @@ const ContactContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  flexDirection: "column",
 });
 
 const ThreedImage = styled("img")({
@@ -14,8 +13,13 @@ const ThreedImage = styled("img")({
   height: "50vh",
 });
 
+const RightContainer = styled("div")({
+  width: "70%",
+  height: "100%",
+});
+
 const ContactCard = styled("div")({
-  width: "40vw",
+  width: "70%",
   height: "50%",
   display: "flex",
   flexDirection: "column",
@@ -32,7 +36,7 @@ const ContactCard = styled("div")({
 
 const Title = styled(Typography)({
   fontSize: "3vw",
-  fontFamily: "'Raleway', sans-serif",
+  fontFamily: "'Inter', sans-serif",
   color: "#87D68D",
   fontWeight: "bold",
   "@media screen and (max-width:720px)": {
@@ -43,7 +47,7 @@ const Title = styled(Typography)({
 const Text = styled(Typography)({
   fontSize: "1.2rem",
   fontWeight: "bold",
-
+  fontFamily: "'Inter', sans-serif",
   color: "black",
 
   textAlign: "justify",
@@ -55,4 +59,11 @@ const Text = styled(Typography)({
   },
 });
 
-export { ContactContainer, ContactCard, ThreedImage, Title, Text };
+export {
+  ContactContainer,
+  ContactCard,
+  ThreedImage,
+  Title,
+  Text,
+  RightContainer,
+};
