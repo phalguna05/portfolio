@@ -6,6 +6,9 @@ const ContactContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  "@media screen and (max-width:720px)": {
+    flexDirection: "column",
+  },
 });
 
 const ThreedImage = styled("img")({
@@ -16,6 +19,9 @@ const ThreedImage = styled("img")({
 const RightContainer = styled("div")({
   width: "70%",
   height: "100%",
+  "@media screen and (max-width:720px)": {
+    height: "70%",
+  },
 });
 
 const ContactCard = styled("div")({
@@ -30,7 +36,7 @@ const ContactCard = styled("div")({
   padding: "2vw",
   boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
   "@media screen and (max-width:720px)": {
-    width: "80%",
+    width: "95%",
   },
 });
 

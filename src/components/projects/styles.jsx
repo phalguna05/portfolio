@@ -6,6 +6,9 @@ const ProjectsContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  "@media screen and (max-width:720px)": {
+    flexDirection: "column",
+  },
 });
 
 const ScrollableContainer = styled("div")({
@@ -42,11 +45,9 @@ const ProjectBox = styled("div")({
     fontWeight: "bold",
   },
   "@media screen and (max-width:720px)": {
-    backgroundColor: "rgba(255, 255, 255, 0.05)",
     padding: "10px",
     width: "90%",
-    borderRadius: "8px",
-    boxShadow: "0 0 10px #fff",
+    height: "20%",
   },
 });
 

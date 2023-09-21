@@ -2,7 +2,7 @@ import { IconButton, styled, Typography } from "@mui/material";
 
 const NavigationContainer = styled("div")(({ open }) => ({
   width: "100%",
-  height: open ? "28vh" : "8vh",
+  height: open ? "35vh" : "8vh",
   display: "flex",
   overflow: "hidden",
   position: "fixed",

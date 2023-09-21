@@ -37,6 +37,7 @@ const Experience = () => {
                   display: "flex",
                   width: "100%",
                   marginTop: "15px",
+                  flexWrap: "wrap",
                 }}
               >
                 {experience.skills.map((skill) => (

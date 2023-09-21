@@ -8,6 +8,9 @@ const AboutContainer = styled("div")({
   height: "100%",
   alignItems: "center",
   justifyContent: "space-around",
+  "@media screen and (max-width:720px)": {
+    flexDirection: "column",
+  },
 });
 const HeadingContainer = styled("div")({
   width: "30%",
@@ -15,6 +18,10 @@ const HeadingContainer = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  "@media screen and (max-width:720px)": {
+    marginTop: "5vh",
+    height: "10vh",
+  },
 });
 
 const ContentContainer = styled("div")({
@@ -25,6 +32,8 @@ const ContentContainer = styled("div")({
   justifyContent: "center",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
+    width: "95%",
+    height: "60%",
   },
 });
 
@@ -37,6 +46,9 @@ const LeftTextContainer = styled("div")({
   // "@media screen and (max-width:720px)": {
   //   width: "90%",
   // },
+  "@media screen and (max-width:720px)": {
+    display: "none",
+  },
 });
 
 const ContentBox = styled(Paper)({
@@ -56,7 +68,6 @@ const ContentBox = styled(Paper)({
     height: "90%",
     width: "90%",
     opacity: "1",
-    boxShadow: "0 0 10px #fff",
   },
 });
 
@@ -83,6 +94,7 @@ const Heading = styled(Typography)({
   backgroundClip: "text",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
+    transform: "none",
   },
 });
 

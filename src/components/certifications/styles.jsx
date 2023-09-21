@@ -7,6 +7,9 @@ const CertificationsContainer = styled("div")({
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
+  "@media screen and (max-width:720px)": {
+    flexDirection: "column",
+  },
 });
 
 const LeftContainer = styled("div")({
@@ -34,12 +37,13 @@ const Heading = styled(Typography)({
   backgroundClip: "text",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
+    transform: "none",
   },
 });
 
 const ImageContainer = styled("img")({
-  width: "80%",
-  height: "80%",
+  width: "95%",
+  height: "60%",
   boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
   borderRadius: "8px",
 });

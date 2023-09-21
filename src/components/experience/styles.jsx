@@ -19,7 +19,8 @@ const LeftContainer = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   "@media screen and (max-width:720px)": {
-    display: "none",
+    height: "10vh",
+    marginTop: "5vh",
   },
 });
 const ImgContainer = styled("img")({
@@ -36,7 +37,8 @@ const RightContainer = styled("div")({
   justifyContent: "space-evenly",
   alignItems: "center",
   "@media screen and (max-width:720px)": {
-    width: "90%",
+    width: "95%",
+    height: "50%",
     alignItems: "center",
   },
 });
@@ -55,7 +57,7 @@ const ExperienceBox = styled("div")({
 
   "@media screen and (max-width:720px)": {
     width: "95%",
-    height: "22%",
+    height: "40%",
   },
 });
 const Heading = styled(Typography)({
@@ -69,6 +71,7 @@ const Heading = styled(Typography)({
   backgroundClip: "text",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
+    transform: "none",
   },
 });
 
@@ -77,8 +80,8 @@ const Tag = styled(Typography)({
   padding: "5px",
   paddingLeft: "10px",
   paddingRight: "10px",
-  borderRadius: "18px",
-  backgroundColor: "#2dd9fe",
+  borderRadius: "10px",
+  backgroundColor: "#009F93",
   opacity: "0.9",
   boxShadow: "rgb(38, 57, 77) 0px 10px 30px -10px",
   marginRight: "10px",
@@ -90,6 +93,8 @@ const Tag = styled(Typography)({
   "@media screen and (max-width:720px)": {
     fontSize: "3vw",
     opacity: "1",
+    width: "20vw",
+    marginBottom: "10px",
   },
 });
 
