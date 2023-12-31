@@ -23,8 +23,8 @@ const Landing = () => {
   return (
     <CompleteContainer>
       <PageContainer>
-        <Navbar />
         <LandingContainer>
+          <Navbar />
           <TitleContainer>
             <SalutaionText>Hello there! I am,</SalutaionText>
             <Title>Phalguna Reddy Kadukuntla</Title>
@@ -32,6 +32,17 @@ const Landing = () => {
               A dedicated and innovative software engineer with a passion for
               crafting efficient and user-centric web applications.
             </Caption>
+            <SocialsContainer>
+              {icons.map((icon, idx) => (
+                <SocialButton
+                  onClick={() => {
+                    window.open(urls[idx], "_blank");
+                  }}
+                >
+                  {icon}
+                </SocialButton>
+              ))}
+            </SocialsContainer>
             <LearnMoreButton
               variant="outlined"
               onClick={() =>
@@ -45,18 +56,6 @@ const Landing = () => {
               Learn more about me...
             </LearnMoreButton>
           </TitleContainer>
-          <SocialsContainer>
-            {icons.map((icon, idx) => (
-              <SocialButton
-                sx={{ color: "#015788" }}
-                onClick={() => {
-                  window.open(urls[idx], "_blank");
-                }}
-              >
-                {icon}
-              </SocialButton>
-            ))}
-          </SocialsContainer>
         </LandingContainer>
       </PageContainer>
       <About />

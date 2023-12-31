@@ -4,8 +4,13 @@ const ContactContainer = styled("div")({
   width: "100%",
   height: "100%",
   display: "flex",
+  flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  backgroundImage:
+    "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  backgroundSize: "100% 50%",
+  backgroundRepeat: "no-repeat",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
@@ -25,16 +30,18 @@ const RightContainer = styled("div")({
 });
 
 const ContactCard = styled("div")({
-  width: "70%",
+  width: "60%",
   height: "50%",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-evenly",
+  justifyContent: "space-around",
   alignItems: "center",
-  backgroundColor: "white",
-  borderRadius: "8px",
-  padding: "2vw",
-  boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
+  paddingLeft: "4vw",
+  paddingRight: "4vw",
+  paddingTop: "2vh",
+  paddingBottom: "2vh",
+  borderRadius: "12px",
+  backgroundColor: "hsl(0deg 0% 98.04%)",
   "@media screen and (max-width:720px)": {
     width: "95%",
   },
@@ -55,15 +62,17 @@ const Text = styled(Typography)({
   fontWeight: "bold",
   fontFamily: "'Inter', sans-serif",
   color: "black",
-
   textAlign: "justify",
   opacity: "1",
+  lineHeight: "5vh",
   wordBreak: "break-word",
   "@media screen and (max-width:720px)": {
     fontSize: "3.5vw",
     opacity: "1",
   },
 });
+
+const FooterContainer = styled("div")({});
 
 export {
   ContactContainer,
@@ -72,4 +81,5 @@ export {
   Title,
   Text,
   RightContainer,
+  FooterContainer,
 };

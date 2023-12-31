@@ -7,13 +7,15 @@ const CertificationsContainer = styled("div")({
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
+  background:
+    "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
 });
 
 const LeftContainer = styled("div")({
-  width: "70%",
+  width: "50%",
   height: "90%",
   marginTop: "2vh",
   display: "flex",
@@ -27,25 +29,38 @@ const LeftContainer = styled("div")({
 });
 
 const Heading = styled(Typography)({
-  fontSize: "4.5vw",
+  fontSize: "3vw",
   fontFamily: "'Inter', sans-serif",
-  color: "transparent",
+  color: "black",
   wordBreak: "break-word",
   fontWeight: "bold",
-  transform: "rotate(-90deg)",
-  backgroundImage: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
-  backgroundClip: "text",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
   },
 });
+const HeadingContainer = styled("div")({
+  width: "50%",
+  height: "90%",
+  display: "flex",
+  justifyContent: "center",
 
+  alignItems: "center",
+  "@media screen and (max-width:720px)": {
+    height: "10vh",
+    marginTop: "5vh",
+  },
+});
 const ImageContainer = styled("img")({
-  width: "95%",
+  width: "90%",
   height: "60%",
-  boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-  borderRadius: "8px",
+  borderRadius: "12px",
 });
 
-export { CertificationsContainer, LeftContainer, Heading, ImageContainer };
+export {
+  CertificationsContainer,
+  LeftContainer,
+  Heading,
+  ImageContainer,
+  HeadingContainer,
+};

@@ -1,11 +1,13 @@
 import { Button, IconButton, styled, Typography } from "@mui/material";
 import "../../index.css";
-
 const LandingContainer = styled("div")({
   display: "flex",
+  flexDirection: "column",
   width: "100%",
   height: "100%",
-  justifyContent: "space-between",
+  alignItems: "center",
+  background:
+    "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
     justifyContent: "space-evenly",
@@ -17,12 +19,10 @@ const TitleContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
   wordBreak: "break-word",
-  width: "60%",
-  marginLeft: "5vw",
-  alignItems: "flex-start",
-  marginTop: "28vh",
-  textAlign: "left",
-
+  width: "100%",
+  height: "60%",
+  alignItems: "center",
+  marginTop: "20vh",
   "@media screen and (max-width:720px)": {
     width: "90%",
     alignItems: "center",
@@ -34,7 +34,6 @@ const SalutaionText = styled(Typography)({
   fontSize: "1.5vw",
   fontWeight: "bold",
   color: "#364156",
-  opacity: "0.9",
   fontFamily: "'Inter', sans-serif",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
@@ -44,9 +43,8 @@ const Caption = styled(Typography)({
   fontSize: "1.1vw",
   fontWeight: "bold",
   color: "#364156",
-  opacity: "0.8",
   fontFamily: "'Inter', sans-serif",
-  marginBottom: "8vh",
+  marginBottom: "2vh",
   "@media screen and (max-width:720px)": {
     fontSize: "3vw",
   },
@@ -57,9 +55,9 @@ const Title = styled(Typography)({
   wordBreak: "break-word",
   marginBottom: "2vh",
   fontWeight: "bold",
-  backgroundImage: "linear-gradient(45deg, #553c9a, #ee4b2b)",
+
   backgroundClip: "text",
-  color: "transparent",
+  color: "black",
   "@media screen and (max-width:720px)": {
     fontSize: "8vw",
   },
@@ -80,13 +78,10 @@ const LearnMoreButton = styled(Button)({
 });
 const SocialsContainer = styled("div")({
   display: "flex",
-  flexDirection: "column",
   justifyContent: "space-around",
-  width: "30%",
-  marginRight: "2vw",
-  marginTop: "28vh",
-  height: "30vh",
-  alignItems: "end",
+  width: "20%",
+  alignItems: "center",
+  marginBottom: "3vh",
   "@media screen and (max-width:720px)": {
     flexDirection: "row",
     width: "60%",
@@ -97,16 +92,16 @@ const SocialsContainer = styled("div")({
 });
 
 const SocialButton = styled(IconButton)({
-  color: "#53FFEB",
+  color: "black",
   opacity: "1",
   ":hover": {
     opacity: "1",
-    backgroundColor: "#50FFB1",
+    backgroundColor: "black",
     borderRadius: "8px",
-    color: "black",
+    color: "white",
   },
   "@media screen and (max-width:720px)": {
-    color: "#020122",
+    color: "black",
   },
 });
 

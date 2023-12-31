@@ -22,14 +22,21 @@ const Experience = () => {
           {/* <Heading style={{ marginBottom: "0px" }}>Experience</Heading> */}
           {experiences.map((experience) => (
             <ExperienceBox>
-              <Content style={{ fontWeight: "bold", color: "#009F93" }}>
-                {experience.title} . {experience.company}
+              <Content
+                style={{
+                  fontWeight: "bold",
+                  color: "black",
+                  fontSize: "2vh",
+                }}
+              >
+                {experience.title}
               </Content>
-              <Content style={{ color: "#03312E" }}>
+              <Content>{experience.company}</Content>
+              <Content>
                 {experience.from} - {experience.to}
               </Content>
 
-              <Content style={{ color: "black" }}>
+              <Content sx={{ lineHeight: "4vh" }}>
                 {experience.description}
               </Content>
               <div

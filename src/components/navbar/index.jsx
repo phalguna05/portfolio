@@ -1,13 +1,13 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
-import Logo from "./logo.png";
 import {
+  Circle,
   InnerNavContainer,
-  LogoContainer,
   MenuButton,
   NavigationContainer,
   NavItemsContainer,
   NavLink,
+  TitleLink,
 } from "./styles";
 const Links = ["About", "Experience", "Projects", "Certifications", "Contact"];
 
@@ -27,10 +27,32 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
+  const [scrollPosition, setScrollPosition] = React.useState(true);
+  const handleScrollPos = () => {
+    const position = window.pageYOffset;
+    if (position >= window.innerHeight) {
+      setScrollPosition(false);
+    } else {
+      setScrollPosition(true);
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScrollPos, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <NavigationContainer open={open}>
       <InnerNavContainer>
-        <LogoContainer src={Logo} onClick={handleLogoClick} />
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <Circle />
+          <TitleLink onClick={handleLogoClick}>Phalguna</TitleLink>
+        </div>
+
         <MenuButton onClick={() => setOpen(!open)}>
           <MenuIcon fontSize="large" />
         </MenuButton>

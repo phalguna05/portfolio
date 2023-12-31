@@ -1,20 +1,15 @@
 import { IconButton, styled, Typography } from "@mui/material";
+import { keyframes } from "@mui/system";
 
 const NavigationContainer = styled("div")(({ open }) => ({
   width: "100%",
-  height: open ? "35vh" : "8vh",
+  height: open ? "35vh" : "7vh",
   display: "flex",
   overflow: "hidden",
-  position: "fixed",
-  zIndex: "100",
+  top: "0",
+
   justifyContent: "center",
-
-  backdropFilter: "blur(5px)",
-  backgroundColor: "rgba(0, 0, 0, .25)",
-  background: "rgba(255, 255, 255, 0.15)",
-
-  boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-
+  transition: "all 1s ease-out",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
@@ -22,9 +17,8 @@ const NavigationContainer = styled("div")(({ open }) => ({
 
 const InnerNavContainer = styled("div")({
   width: "100%",
-  marginLeft: "3vw",
+  marginLeft: "2vw",
   marginRight: "3vw",
-  marginTop: "1vh",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
@@ -47,7 +41,7 @@ const NavItemsContainer = styled("div")({
   },
 });
 
-const LogoContainer = styled("img")({
+const LogoContainer = styled("div")({
   cursor: "pointer",
   width: "4vw",
   height: "5vh",
@@ -62,6 +56,15 @@ const LogoContainer = styled("img")({
   },
 });
 
+const TitleLink = styled(Typography)({
+  fontWeight: "800",
+  cursor: "pointer",
+  fontSize: "1.5vw",
+  padding: "8px",
+  color: "#020122",
+  fontFamily: "'Inter', sans-serif",
+});
+
 const NavLink = styled(Typography)({
   fontWeight: "bold",
   cursor: "pointer",
@@ -70,15 +73,13 @@ const NavLink = styled(Typography)({
   fontFamily: "'Inter', sans-serif",
   opacity: "0.8",
   ":hover": {
-    backgroundColor: "#50FFB1",
-    borderRadius: "8px",
-    color: "#0a122a",
+    backgroundColor: "#14110F",
+    borderRadius: "4px",
+    color: "white",
     opacity: "1",
-    boxShadow:
-      "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
   },
   ":active": {
-    backgroundColor: "#3b4155",
+    backgroundColor: "#23395B",
   },
 });
 
@@ -91,6 +92,42 @@ const MenuButton = styled(IconButton)({
     color: "#020122",
   },
 });
+
+// Define keyframes for different shapes
+const squareAnimation = keyframes`
+  0%, 20% {
+    border-radius: 25%;
+    transform: rotate(0deg);
+  }
+  25%, 45% {
+    border-radius: 50%;
+    background-color:red;
+    transform: rotate(0deg);
+  }
+  50%, 70% {
+    border-radius: 25%;
+    background-color:orange;
+    transform: rotate(180deg);
+  }
+  75%, 95% {
+    border-radius: 50%;
+    background-color:green;
+    transform: rotate(180deg);
+  }
+  100% {
+    border-radius: 25%;
+    transform: rotate(360deg);
+  }
+`;
+
+const Circle = styled("div")`
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: blue;
+  border-radius: 50%;
+  animation: ${squareAnimation} 4s infinite;
+`;
+
 export {
   NavigationContainer,
   LogoContainer,
@@ -98,4 +135,6 @@ export {
   NavItemsContainer,
   NavLink,
   MenuButton,
+  TitleLink,
+  Circle,
 };

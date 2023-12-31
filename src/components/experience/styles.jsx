@@ -5,16 +5,20 @@ const ExperienceContainer = styled("div")({
   width: "100%",
   height: "100%",
   display: "flex",
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-around",
+  background:
+    "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
 });
 
 const LeftContainer = styled("div")({
-  width: "30%",
-  height: "100%",
+  width: "100%",
+  height: "20%",
+  marginTop: "5vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -29,11 +33,9 @@ const ImgContainer = styled("img")({
 });
 
 const RightContainer = styled("div")({
-  width: "70%",
+  width: "90%",
   height: "90%",
-  marginTop: "2vh",
   display: "flex",
-  flexDirection: "column",
   justifyContent: "space-evenly",
   alignItems: "center",
   "@media screen and (max-width:720px)": {
@@ -44,31 +46,36 @@ const RightContainer = styled("div")({
 });
 
 const ExperienceBox = styled("div")({
-  width: "70%",
-  height: "30%",
+  width: "40%",
+  minHeight: "50%",
   textAlign: "left",
   backgroundColor: "white",
-  padding: "10px",
-  borderRadius: "8px",
+  paddingTop: "4vh",
+  paddingBottom: "4vh",
+  paddingLeft: "1.5vw",
+  paddingRight: "1.5vw",
+  borderRadius: "12px",
   alignItems: "center",
   display: "flex",
   flexDirection: "column",
-  boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-
+  cursor: "pointer",
+  ":hover": {
+    backgroundColor: "whitesmoke",
+  },
   "@media screen and (max-width:720px)": {
     width: "95%",
     height: "40%",
   },
 });
 const Heading = styled(Typography)({
-  fontSize: "5vw",
+  fontSize: "2.5vw",
   fontFamily: "'Inter', sans-serif",
-  color: "transparent",
+  color: "black",
   wordBreak: "break-word",
   fontWeight: "bold",
-  transform: "rotate(-90deg)",
-  backgroundImage: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
-  backgroundClip: "text",
+  border: "2px solid black",
+  padding: "1vw",
+  borderRadius: "8px",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
@@ -80,11 +87,10 @@ const Tag = styled(Typography)({
   padding: "5px",
   paddingLeft: "10px",
   paddingRight: "10px",
-  borderRadius: "10px",
-  backgroundColor: "#009F93",
-  opacity: "0.9",
-  boxShadow: "rgb(38, 57, 77) 0px 10px 30px -10px",
+  borderRadius: "14px",
+  backgroundColor: "#0B132B",
   marginRight: "10px",
+  marginBottom: "10px",
   color: "white",
   fontWeight: "bold",
   textAlign: "left",

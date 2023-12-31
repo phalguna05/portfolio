@@ -1,25 +1,26 @@
 import { styled } from "@mui/material";
-
 const ProjectsContainer = styled("div")({
   width: "100%",
   height: "100%",
   display: "flex",
+  flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  background:
+    "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
 });
 
 const ScrollableContainer = styled("div")({
-  width: "70%",
+  width: "95%",
   padding: "10px",
   height: "85%",
-  marginTop: "5vh",
-  overflowY: "auto",
+  overflowX: "auto",
   display: "flex",
   alignItems: "center",
-  flexDirection: "column",
+  justifyContent: "space-evenly",
   "@media screen and (max-width:720px)": {
     width: "95%",
     padding: "10px",
@@ -27,22 +28,25 @@ const ScrollableContainer = styled("div")({
 });
 
 const ProjectBox = styled("div")({
-  width: "75%",
-  height: "30vh",
+  width: "30%",
+  height: "90%",
   minHeight: "30vh",
   marginBottom: "5vh",
   display: "flex",
+  flexDirection: "column",
   opacity: "1",
   backgroundColor: "white",
   justifyContent: "space-evenly",
   alignItems: "center",
-  borderRadius: "8px",
+  borderRadius: "12px",
   padding: "5px",
+  cursor: "pointer",
   boxShadow:
     "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
   ":hover": {
     opacity: "1",
     fontWeight: "bold",
+    backgroundColor: "whitesmoke",
   },
   "@media screen and (max-width:720px)": {
     padding: "10px",
@@ -52,8 +56,8 @@ const ProjectBox = styled("div")({
 });
 
 const ImageContainer = styled("div")({
-  width: "40%",
-  height: "100%",
+  width: "90%",
+  height: "70%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -65,18 +69,10 @@ const ImageContainer = styled("div")({
 const ImgBox = styled("img")({
   width: "100%",
   height: "80%",
-  boxShadow:
-    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-  border: "2px solid #03312E",
-
-  ":hover": {
-    opacity: "1",
-    boxShadow: "0 5px 20px #87D68D",
-  },
 });
 
 const TextContainer = styled("div")({
-  width: "50%",
+  width: "90%",
   overflow: "scroll",
   height: "80%",
   textAlign: "left",

@@ -1,4 +1,4 @@
-import { Paper, styled, Typography } from "@mui/material";
+import { styled, Typography } from "@mui/material";
 import "../../index.css";
 
 const AboutContainer = styled("div")({
@@ -7,20 +7,25 @@ const AboutContainer = styled("div")({
   width: "100%",
   height: "100%",
   alignItems: "center",
+  backgroundImage:
+    "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  backgroundSize: "100% 50%",
+  backgroundRepeat: "no-repeat",
   justifyContent: "space-around",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
 });
 const HeadingContainer = styled("div")({
-  width: "30%",
-  height: "100%",
+  width: "50%",
+  height: "20%",
+  marginTop: "5vh",
   display: "flex",
-  alignItems: "center",
   justifyContent: "center",
+  alignItems: "center",
   "@media screen and (max-width:720px)": {
-    marginTop: "5vh",
     height: "10vh",
+    marginTop: "5vh",
   },
 });
 
@@ -30,6 +35,7 @@ const ContentContainer = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  marginTop: "0vh",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
     width: "95%",
@@ -51,17 +57,17 @@ const LeftTextContainer = styled("div")({
   },
 });
 
-const ContentBox = styled(Paper)({
+const ContentBox = styled("div")({
   width: "80%",
   height: "60%",
-  borderRadius: "14px",
+  borderRadius: "12px",
   display: "flex",
-  opacity: "0.9",
-  backgroundColor: "white",
+
+  backgroundColor: "hsl(0deg 0% 98.04%)",
   justifyContent: "space-around",
   alignItems: "center",
-  boxShadow:
-    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+  // boxShadow:
+  //   "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
   padding: "2vh",
   overflow: "hidden",
   "@media screen and (max-width:720px)": {
@@ -72,7 +78,7 @@ const ContentBox = styled(Paper)({
 });
 
 const RightTextContainer = styled("div")({
-  width: "50%",
+  width: "90%",
   height: "80%",
   display: "flex",
   textAlign: "justify",
@@ -84,14 +90,11 @@ const RightTextContainer = styled("div")({
   },
 });
 const Heading = styled(Typography)({
-  fontSize: "5vw",
+  fontSize: "3vw",
   fontFamily: "'Inter', sans-serif",
-  color: "transparent",
+  color: "black",
   wordBreak: "break-word",
   fontWeight: "bold",
-  transform: "rotate(-90deg)",
-  backgroundImage: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
-  backgroundClip: "text",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
@@ -100,10 +103,10 @@ const Heading = styled(Typography)({
 
 const Content = styled(Typography)({
   fontSize: "1vw",
-
   color: "black",
   fontWeight: "bold",
   textAlign: "left",
+  overflow: "scroll",
   fontFamily: "'Inter', sans-serif",
   wordBreak: "break-word",
   "@media screen and (max-width:720px)": {
