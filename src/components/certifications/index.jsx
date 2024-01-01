@@ -1,5 +1,4 @@
 import React from "react";
-import { Content } from "../about/styles";
 import { PageContainer } from "../globalStyles";
 import Aws from "./aws.png";
 import {
@@ -16,7 +15,6 @@ const Certifications = () => {
       <CertificationsContainer>
         <HeadingContainer>
           <Heading>Certifications</Heading>
-          <Content></Content>
         </HeadingContainer>
         <LeftContainer>
           <ImageContainer src={Aws} />

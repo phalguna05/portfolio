@@ -23,7 +23,7 @@ const LeftContainer = styled("div")({
   justifyContent: "space-evenly",
   alignItems: "center",
   "@media screen and (max-width:720px)": {
-    width: "90%",
+    width: "95%",
     alignItems: "center",
   },
 });
@@ -34,6 +34,9 @@ const Heading = styled(Typography)({
   color: "black",
   wordBreak: "break-word",
   fontWeight: "bold",
+  border: "2px solid black",
+  padding: "1vw",
+  borderRadius: "8px",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
@@ -55,6 +58,9 @@ const ImageContainer = styled("img")({
   width: "90%",
   height: "60%",
   borderRadius: "12px",
+  "@media screen and (max-width:720px)": {
+    height: "70%",
+  },
 });
 
 export {

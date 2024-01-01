@@ -10,7 +10,6 @@ const LandingContainer = styled("div")({
     "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
-    justifyContent: "space-evenly",
     alignItems: "center",
   },
 });

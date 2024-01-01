@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { styled, Typography } from "@mui/material";
 const ProjectsContainer = styled("div")({
   width: "100%",
   height: "100%",
@@ -24,6 +24,7 @@ const ScrollableContainer = styled("div")({
   "@media screen and (max-width:720px)": {
     width: "95%",
     padding: "10px",
+    flexDirection: "column",
   },
 });
 
@@ -49,9 +50,11 @@ const ProjectBox = styled("div")({
     backgroundColor: "whitesmoke",
   },
   "@media screen and (max-width:720px)": {
-    padding: "10px",
-    width: "90%",
+    padding: "5px",
+    width: "95%",
+    marginBottom: "5px",
     height: "20%",
+    minHeight: "30%",
   },
 });
 
@@ -83,6 +86,17 @@ const TextContainer = styled("div")({
   },
 });
 
+const ProjectTitle = styled(Typography)({
+  display: "none",
+
+  "@media screen and (max-width:720px)": {
+    fontSize: "3.5vw",
+    fontWeight: "900",
+    fontFamily: "'Inter', sans-serif bold",
+    display: "flex",
+  },
+});
+
 export {
   ProjectsContainer,
   ScrollableContainer,
@@ -90,4 +104,5 @@ export {
   ImgBox,
   ImageContainer,
   TextContainer,
+  ProjectTitle,
 };

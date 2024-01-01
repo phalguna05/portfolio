@@ -10,9 +10,6 @@ const ExperienceContainer = styled("div")({
   justifyContent: "space-around",
   background:
     "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
-  "@media screen and (max-width:720px)": {
-    flexDirection: "column",
-  },
 });
 
 const LeftContainer = styled("div")({
@@ -23,8 +20,8 @@ const LeftContainer = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   "@media screen and (max-width:720px)": {
-    height: "10vh",
-    marginTop: "5vh",
+    height: "8vh",
+    marginTop: "0vh",
   },
 });
 const ImgContainer = styled("img")({
@@ -40,8 +37,9 @@ const RightContainer = styled("div")({
   alignItems: "center",
   "@media screen and (max-width:720px)": {
     width: "95%",
-    height: "50%",
+    height: "85%",
     alignItems: "center",
+    flexDirection: "column",
   },
 });
 
@@ -64,7 +62,8 @@ const ExperienceBox = styled("div")({
   },
   "@media screen and (max-width:720px)": {
     width: "95%",
-    height: "40%",
+    minHeight: "45%",
+    padding: "5px",
   },
 });
 const Heading = styled(Typography)({
@@ -97,7 +96,7 @@ const Tag = styled(Typography)({
   fontFamily: "'Inter', sans-serif",
   wordBreak: "break-word",
   "@media screen and (max-width:720px)": {
-    fontSize: "3vw",
+    fontSize: "2vw",
     opacity: "1",
     width: "20vw",
     marginBottom: "10px",

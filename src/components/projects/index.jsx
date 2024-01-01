@@ -7,6 +7,7 @@ import {
   ImgBox,
   ProjectBox,
   ProjectsContainer,
+  ProjectTitle,
   ScrollableContainer,
   TextContainer,
 } from "./styles";
@@ -25,6 +26,7 @@ const Projects = () => {
                 <ImgBox src={project.src} />
               </ImageContainer>
               <TextContainer>
+                <ProjectTitle>{project.title}</ProjectTitle>
                 <Content>{project.description}</Content>
               </TextContainer>
             </ProjectBox>

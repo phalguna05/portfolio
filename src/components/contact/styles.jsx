@@ -43,7 +43,7 @@ const ContactCard = styled("div")({
   borderRadius: "12px",
   backgroundColor: "hsl(0deg 0% 98.04%)",
   "@media screen and (max-width:720px)": {
-    width: "95%",
+    width: "85%",
   },
 });
 
@@ -69,6 +69,7 @@ const Text = styled(Typography)({
   "@media screen and (max-width:720px)": {
     fontSize: "3.5vw",
     opacity: "1",
+    lineHeight: "3.5vh",
   },
 });
 

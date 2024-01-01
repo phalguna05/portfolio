@@ -63,6 +63,9 @@ const TitleLink = styled(Typography)({
   padding: "8px",
   color: "#020122",
   fontFamily: "'Inter', sans-serif",
+  "@media screen and (max-width:720px)": {
+    fontSize: "5vw",
+  },
 });
 
 const NavLink = styled(Typography)({
@@ -126,6 +129,10 @@ const Circle = styled("div")`
   background-color: blue;
   border-radius: 50%;
   animation: ${squareAnimation} 4s infinite;
+  @media screen and (max-width: 720px) : {
+    width: 5vw;
+    height: 5vw;
+  }
 `;
 
 export {

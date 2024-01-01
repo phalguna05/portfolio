@@ -95,6 +95,9 @@ const Heading = styled(Typography)({
   color: "black",
   wordBreak: "break-word",
   fontWeight: "bold",
+  border: "2px solid black",
+  padding: "1vw",
+  borderRadius: "8px",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
@@ -112,6 +115,7 @@ const Content = styled(Typography)({
   "@media screen and (max-width:720px)": {
     fontSize: "3vw",
     opacity: "1",
+    lineHeight: "2.5vh",
   },
 });
 
