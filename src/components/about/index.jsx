@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import { PageContainer } from "../globalStyles";
+import AboutMe from "./aboutMe.svg";
 import {
   AboutContainer,
   Content,
@@ -15,18 +16,25 @@ const About = () => {
       <AboutContainer>
         <ContentContainer>
           <ContentBox elevation={3}>
+            <img style={{ width: "40vw", height: "70vh" }} src={AboutMe} />
             <RightTextContainer>
               <Typography
                 sx={{
                   fontSize: "4vh",
-                  fontWeight: "bold",
+                  fontWeight: "bolder",
                   fontFamily: "'Inter', sans-serif",
+                  color: "#50C878",
                 }}
               >
-                More about me
+                About Me
               </Typography>
               <Content
-                sx={{ fontSize: "2vh", marginTop: "2vh", lineHeight: "3.5vh" }}
+                sx={{
+                  fontSize: "2vh",
+                  marginTop: "2vh",
+                  lineHeight: "3.5vh",
+                  color: "white",
+                }}
               >
                 Hello! I'm Phalguna Reddy Kadukuntla, a dedicated and innovative
                 software engineer with a passion for crafting efficient and

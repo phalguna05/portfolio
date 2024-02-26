@@ -1,8 +1,10 @@
 import React from "react";
-import { Content, Heading, HeadingContainer } from "../about/styles";
+import { HeadingContainer } from "../about/styles";
+import { Heading } from "../experience/styles";
 import { PageContainer } from "../globalStyles";
 import { projects } from "./constants";
 import {
+  Content,
   ImageContainer,
   ImgBox,
   ProjectBox,
@@ -20,10 +22,20 @@ const Projects = () => {
           <Heading>Projects</Heading>
         </HeadingContainer>
         <ScrollableContainer>
-          {projects.map((project) => (
-            <ProjectBox>
+          {projects.map((project, idx) => (
+            <ProjectBox
+              style={{
+                alignSelf: idx % 2 ? "flex-end" : "flex-start",
+                borderRadius: idx % 2 ? "10px 40px" : "40px 10px",
+              }}
+            >
               <ImageContainer>
-                <ImgBox src={project.src} />
+                <ImgBox
+                  src={project.src}
+                  style={{
+                    borderRadius: idx % 2 ? "10px 40px" : "40px 10px",
+                  }}
+                />
               </ImageContainer>
               <TextContainer>
                 <ProjectTitle>{project.title}</ProjectTitle>

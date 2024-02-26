@@ -8,14 +8,14 @@ const ExperienceContainer = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-around",
-  background:
-    "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  // background:
+  //   "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
 });
 
 const LeftContainer = styled("div")({
   width: "100%",
   height: "20%",
-  marginTop: "5vh",
+  marginTop: "2vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -30,8 +30,9 @@ const ImgContainer = styled("img")({
 });
 
 const RightContainer = styled("div")({
-  width: "90%",
+  width: "100%",
   height: "90%",
+  margin: "0 auto",
   display: "flex",
   justifyContent: "space-evenly",
   alignItems: "center",
@@ -44,22 +45,18 @@ const RightContainer = styled("div")({
 });
 
 const ExperienceBox = styled("div")({
-  width: "40%",
-  minHeight: "50%",
+  width: "90%",
   textAlign: "left",
-  backgroundColor: "white",
-  paddingTop: "4vh",
-  paddingBottom: "4vh",
+
   paddingLeft: "1.5vw",
   paddingRight: "1.5vw",
-  borderRadius: "12px",
+  borderRadius: "4px",
   alignItems: "center",
   display: "flex",
+
   flexDirection: "column",
   cursor: "pointer",
-  ":hover": {
-    backgroundColor: "whitesmoke",
-  },
+
   "@media screen and (max-width:720px)": {
     width: "95%",
     minHeight: "45%",
@@ -69,12 +66,12 @@ const ExperienceBox = styled("div")({
 const Heading = styled(Typography)({
   fontSize: "2.5vw",
   fontFamily: "'Inter', sans-serif",
-  color: "black",
+  color: "#50C878",
   wordBreak: "break-word",
   fontWeight: "bold",
-  border: "2px solid black",
   padding: "1vw",
-  borderRadius: "8px",
+
+  borderBottom: "2px solid white",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
@@ -87,10 +84,11 @@ const Tag = styled(Typography)({
   paddingLeft: "10px",
   paddingRight: "10px",
   borderRadius: "14px",
-  backgroundColor: "#0B132B",
+  backgroundColor: "#007339",
   marginRight: "10px",
   marginBottom: "10px",
   color: "white",
+  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   fontWeight: "bold",
   textAlign: "left",
   fontFamily: "'Inter', sans-serif",

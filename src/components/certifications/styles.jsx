@@ -7,16 +7,16 @@ const CertificationsContainer = styled("div")({
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
-  background:
-    "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  // background:
+  //   "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
 });
 
 const LeftContainer = styled("div")({
-  width: "50%",
-  height: "90%",
+  width: "60%",
+  height: "100%",
   marginTop: "2vh",
   display: "flex",
   flexDirection: "column",
@@ -57,7 +57,7 @@ const HeadingContainer = styled("div")({
 const ImageContainer = styled("img")({
   width: "90%",
   height: "60%",
-  borderRadius: "12px",
+  borderRadius: "40px 20px",
   "@media screen and (max-width:720px)": {
     height: "70%",
   },

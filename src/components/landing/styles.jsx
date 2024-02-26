@@ -6,22 +6,28 @@ const LandingContainer = styled("div")({
   width: "100%",
   height: "100%",
   alignItems: "center",
-  background:
-    "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  // background:
+  //   "linear-gradient(0deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
     alignItems: "center",
   },
 });
 
+const WallpaperContainer = styled("img")({
+  display: "flex",
+  width: "50%",
+  height: "100%",
+});
+
 const TitleContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
   wordBreak: "break-word",
-  width: "100%",
-  height: "60%",
+  width: "45%",
+  height: "70%",
   alignItems: "center",
-  marginTop: "20vh",
+  marginTop: "25vh",
   "@media screen and (max-width:720px)": {
     width: "90%",
     alignItems: "center",
@@ -32,7 +38,7 @@ const TitleContainer = styled("div")({
 const SalutaionText = styled(Typography)({
   fontSize: "1.5vw",
   fontWeight: "bold",
-  color: "#364156",
+  color: "white",
   fontFamily: "'Inter', sans-serif",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
@@ -41,7 +47,7 @@ const SalutaionText = styled(Typography)({
 const Caption = styled(Typography)({
   fontSize: "1.1vw",
   fontWeight: "bold",
-  color: "#364156",
+  color: "white",
   fontFamily: "'Inter', sans-serif",
   marginBottom: "2vh",
   "@media screen and (max-width:720px)": {
@@ -49,30 +55,33 @@ const Caption = styled(Typography)({
   },
 });
 const Title = styled(Typography)({
-  fontSize: "3.7vw",
+  fontSize: "3vw",
   fontFamily: "'Inter', sans-serif",
   wordBreak: "break-word",
   marginBottom: "2vh",
   fontWeight: "bold",
-
+  color: "#50C878",
   backgroundClip: "text",
-  color: "black",
+
   "@media screen and (max-width:720px)": {
     fontSize: "8vw",
   },
 });
 
 const LearnMoreButton = styled(Button)({
-  fontWeight: "bold",
+  fontWeight: "bolder",
   fontSize: "1vw",
-  color: "#364156",
+  color: "white",
+  backgroundColor: "#007339",
   fontFamily: "'Inter', sans-serif",
   opacity: "1",
   textTransform: "capitalize",
-  boxShadow:
-    "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   "@media screen and (max-width:720px)": {
     fontSize: "2.5vw",
+  },
+  ":hover": {
+    backgroundColor: "#006B44",
   },
 });
 const SocialsContainer = styled("div")({
@@ -91,16 +100,16 @@ const SocialsContainer = styled("div")({
 });
 
 const SocialButton = styled(IconButton)({
-  color: "black",
+  color: "white",
   opacity: "1",
   ":hover": {
     opacity: "1",
-    backgroundColor: "black",
+    backgroundColor: "white",
     borderRadius: "8px",
-    color: "white",
+    color: "#001F3F",
   },
   "@media screen and (max-width:720px)": {
-    color: "black",
+    color: "#07393C",
   },
 });
 
@@ -123,4 +132,5 @@ export {
   SocialButton,
   BackgroundImg,
   CompleteContainer,
+  WallpaperContainer,
 };

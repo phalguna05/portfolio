@@ -1,9 +1,9 @@
 import React from "react";
+import { Heading } from "../experience/styles";
 import { PageContainer } from "../globalStyles";
 import Aws from "./aws.png";
 import {
   CertificationsContainer,
-  Heading,
   HeadingContainer,
   ImageContainer,
   LeftContainer,

@@ -7,6 +7,7 @@ import { PageContainer } from "../globalStyles";
 import Navbar from "../navbar";
 import Projects from "../projects";
 import { icons, urls } from "./constants";
+import LandingWallpaper from "./landingIllustration.svg";
 import {
   Caption,
   CompleteContainer,
@@ -17,6 +18,7 @@ import {
   SocialsContainer,
   Title,
   TitleContainer,
+  WallpaperContainer,
 } from "./styles";
 
 const Landing = () => {
@@ -25,37 +27,41 @@ const Landing = () => {
       <PageContainer>
         <LandingContainer>
           <Navbar />
-          <TitleContainer>
-            <SalutaionText>Hello there! I am,</SalutaionText>
-            <Title>Phalguna Reddy Kadukuntla</Title>
-            <Caption>
-              A dedicated and innovative software engineer with a passion for
-              crafting efficient and user-centric web applications.
-            </Caption>
-            <SocialsContainer>
-              {icons.map((icon, idx) => (
-                <SocialButton
-                  onClick={() => {
-                    window.open(urls[idx], "_blank");
-                  }}
-                >
-                  {icon}
-                </SocialButton>
-              ))}
-            </SocialsContainer>
-            <LearnMoreButton
-              variant="outlined"
-              onClick={() =>
-                window.scroll({
-                  left: 0,
-                  top: window.innerHeight,
-                  behavior: "smooth",
-                })
-              }
-            >
-              Learn more about me...
-            </LearnMoreButton>
-          </TitleContainer>
+          <div style={{ display: "flex", width: "100%", height: "80%" }}>
+            <WallpaperContainer src={LandingWallpaper} />
+
+            <TitleContainer>
+              <SalutaionText>Hello there! I am,</SalutaionText>
+              <Title>Phalguna Reddy Kadukuntla</Title>
+              <Caption>
+                A dedicated and innovative software engineer with a passion for
+                crafting efficient and user-centric web applications.
+              </Caption>
+              <SocialsContainer>
+                {icons.map((icon, idx) => (
+                  <SocialButton
+                    onClick={() => {
+                      window.open(urls[idx], "_blank");
+                    }}
+                  >
+                    {icon}
+                  </SocialButton>
+                ))}
+              </SocialsContainer>
+              <LearnMoreButton
+                variant="contained"
+                onClick={() =>
+                  window.scroll({
+                    left: 0,
+                    top: window.innerHeight,
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Learn more about me...
+              </LearnMoreButton>
+            </TitleContainer>
+          </div>
         </LandingContainer>
       </PageContainer>
       <About />

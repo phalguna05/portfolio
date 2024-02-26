@@ -4,11 +4,11 @@ const ContactContainer = styled("div")({
   width: "100%",
   height: "100%",
   display: "flex",
-  flexDirection: "column",
+
   justifyContent: "center",
   alignItems: "center",
-  backgroundImage:
-    "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  // backgroundImage:
+  //   "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   backgroundSize: "100% 50%",
   backgroundRepeat: "no-repeat",
   "@media screen and (max-width:720px)": {
@@ -30,7 +30,7 @@ const RightContainer = styled("div")({
 });
 
 const ContactCard = styled("div")({
-  width: "60%",
+  width: "40%",
   height: "50%",
   display: "flex",
   flexDirection: "column",
@@ -40,8 +40,7 @@ const ContactCard = styled("div")({
   paddingRight: "4vw",
   paddingTop: "2vh",
   paddingBottom: "2vh",
-  borderRadius: "12px",
-  backgroundColor: "hsl(0deg 0% 98.04%)",
+  borderRadius: "4px",
   "@media screen and (max-width:720px)": {
     width: "85%",
   },

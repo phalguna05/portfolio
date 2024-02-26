@@ -7,8 +7,8 @@ const AboutContainer = styled("div")({
   width: "100%",
   height: "100%",
   alignItems: "center",
-  backgroundImage:
-    "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  // backgroundImage:
+  //   "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   backgroundSize: "100% 50%",
   backgroundRepeat: "no-repeat",
   justifyContent: "space-around",
@@ -18,8 +18,8 @@ const AboutContainer = styled("div")({
 });
 const HeadingContainer = styled("div")({
   width: "50%",
-  height: "20%",
-  marginTop: "5vh",
+  height: "10%",
+  marginBottom: "2vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -30,7 +30,7 @@ const HeadingContainer = styled("div")({
 });
 
 const ContentContainer = styled("div")({
-  width: "70%",
+  width: "90%",
   height: "95%",
   display: "flex",
   alignItems: "center",
@@ -58,14 +58,14 @@ const LeftTextContainer = styled("div")({
 });
 
 const ContentBox = styled("div")({
-  width: "80%",
-  height: "60%",
-  borderRadius: "12px",
+  width: "100%",
+  height: "70%",
+  borderRadius: "4px",
   display: "flex",
-
-  backgroundColor: "hsl(0deg 0% 98.04%)",
+  // backgroundColor: "white",
   justifyContent: "space-around",
   alignItems: "center",
+  // boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   // boxShadow:
   //   "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
   padding: "2vh",
@@ -78,7 +78,7 @@ const ContentBox = styled("div")({
 });
 
 const RightTextContainer = styled("div")({
-  width: "90%",
+  width: "50%",
   height: "80%",
   display: "flex",
   textAlign: "justify",
@@ -95,9 +95,7 @@ const Heading = styled(Typography)({
   color: "black",
   wordBreak: "break-word",
   fontWeight: "bold",
-  border: "2px solid black",
   padding: "1vw",
-  borderRadius: "8px",
   "@media screen and (max-width:720px)": {
     fontSize: "4vw",
     transform: "none",
@@ -106,7 +104,7 @@ const Heading = styled(Typography)({
 
 const Content = styled(Typography)({
   fontSize: "1vw",
-  color: "black",
+  color: "white",
   fontWeight: "bold",
   textAlign: "left",
   overflow: "scroll",
@@ -124,6 +122,7 @@ const ImgContainer = styled("img")({
   height: "55vh",
   borderRadius: "50%",
   cursor: "pointer",
+  backgroundColor: "#001F3F",
   boxShadow:
     "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
   // mixBlendMode: "plus-lighter",

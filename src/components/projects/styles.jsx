@@ -6,8 +6,8 @@ const ProjectsContainer = styled("div")({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  background:
-    "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
+  // background:
+  //   "linear-gradient(180deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)",
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
@@ -15,10 +15,11 @@ const ProjectsContainer = styled("div")({
 
 const ScrollableContainer = styled("div")({
   width: "95%",
-  padding: "10px",
-  height: "85%",
+  padding: "1vh",
+  height: "90%",
   overflowX: "auto",
   display: "flex",
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-evenly",
   "@media screen and (max-width:720px)": {
@@ -29,21 +30,20 @@ const ScrollableContainer = styled("div")({
 });
 
 const ProjectBox = styled("div")({
-  width: "30%",
-  height: "90%",
-  minHeight: "30vh",
-  marginBottom: "5vh",
+  width: "60%",
+  height: "40%",
+  minHeight: "25vh",
+  marginBottom: "2vh",
+  marginTop: "2vh",
   display: "flex",
-  flexDirection: "column",
   opacity: "1",
+  alignSelf: "flex-start",
   backgroundColor: "white",
   justifyContent: "space-evenly",
   alignItems: "center",
-  borderRadius: "12px",
   padding: "5px",
   cursor: "pointer",
-  boxShadow:
-    "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
+  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
   ":hover": {
     opacity: "1",
     fontWeight: "bold",
@@ -59,9 +59,10 @@ const ProjectBox = styled("div")({
 });
 
 const ImageContainer = styled("div")({
-  width: "90%",
-  height: "70%",
+  width: "40%",
+  height: "100%",
   display: "flex",
+
   alignItems: "center",
   justifyContent: "center",
   "@media screen and (max-width:720px)": {
@@ -71,14 +72,16 @@ const ImageContainer = styled("div")({
 
 const ImgBox = styled("img")({
   width: "100%",
-  height: "80%",
+  height: "100%",
+  borderRadius: "40px 10px",
 });
 
 const TextContainer = styled("div")({
-  width: "90%",
+  width: "80%",
   overflow: "scroll",
-  height: "80%",
-  textAlign: "left",
+  height: "90%",
+  margin: "1vw",
+  textAlign: "center",
   alignSelf: "center",
 
   "@media screen and (max-width:720px)": {
@@ -87,13 +90,25 @@ const TextContainer = styled("div")({
 });
 
 const ProjectTitle = styled(Typography)({
-  display: "none",
+  color: "#50C878",
+  fontSize: "1.3vw",
+  fontWeight: "900",
+  fontFamily: "'Inter', sans-serif bold",
+  display: "flex",
+});
 
+const Content = styled(Typography)({
+  fontSize: "1vw",
+  color: "black",
+  fontWeight: "bold",
+  textAlign: "left",
+  overflow: "scroll",
+  fontFamily: "'Inter', sans-serif",
+  wordBreak: "break-word",
   "@media screen and (max-width:720px)": {
-    fontSize: "3.5vw",
-    fontWeight: "900",
-    fontFamily: "'Inter', sans-serif bold",
-    display: "flex",
+    fontSize: "3vw",
+    opacity: "1",
+    lineHeight: "2.5vh",
   },
 });
 
@@ -105,4 +120,5 @@ export {
   ImageContainer,
   TextContainer,
   ProjectTitle,
+  Content,
 };

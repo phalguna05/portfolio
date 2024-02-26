@@ -7,7 +7,6 @@ const NavigationContainer = styled("div")(({ open }) => ({
   display: "flex",
   overflow: "hidden",
   top: "0",
-
   justifyContent: "center",
   transition: "all 1s ease-out",
   "@media screen and (max-width:720px)": {
@@ -61,7 +60,7 @@ const TitleLink = styled(Typography)({
   cursor: "pointer",
   fontSize: "1.5vw",
   padding: "8px",
-  color: "#020122",
+  color: "white",
   fontFamily: "'Inter', sans-serif",
   "@media screen and (max-width:720px)": {
     fontSize: "5vw",
@@ -72,17 +71,14 @@ const NavLink = styled(Typography)({
   fontWeight: "bold",
   cursor: "pointer",
   padding: "8px",
-  color: "#020122",
+  color: "white",
   fontFamily: "'Inter', sans-serif",
   opacity: "0.8",
   ":hover": {
-    backgroundColor: "#14110F",
+    backgroundColor: "#50C878",
     borderRadius: "4px",
     color: "white",
     opacity: "1",
-  },
-  ":active": {
-    backgroundColor: "#23395B",
   },
 });
 

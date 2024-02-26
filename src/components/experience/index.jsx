@@ -1,15 +1,12 @@
 import React from "react";
-import { Content } from "../about/styles";
 import { PageContainer } from "../globalStyles";
-import { experiences } from "./constants";
 import {
-  ExperienceBox,
   ExperienceContainer,
   Heading,
   LeftContainer,
   RightContainer,
-  Tag,
 } from "./styles";
+import TimelineComponent from "./TimelineComponent";
 
 const Experience = () => {
   return (
@@ -19,40 +16,7 @@ const Experience = () => {
           <Heading>Experience</Heading>
         </LeftContainer>
         <RightContainer>
-          {/* <Heading style={{ marginBottom: "0px" }}>Experience</Heading> */}
-          {experiences.map((experience) => (
-            <ExperienceBox>
-              <Content
-                style={{
-                  fontWeight: "bold",
-                  color: "black",
-                  fontSize: "2vh",
-                }}
-              >
-                {experience.title}
-              </Content>
-              <Content>{experience.company}</Content>
-              <Content>
-                {experience.from} - {experience.to}
-              </Content>
-
-              <Content sx={{ lineHeight: "4vh" }}>
-                {experience.description}
-              </Content>
-              <div
-                style={{
-                  display: "flex",
-                  width: "100%",
-                  marginTop: "15px",
-                  flexWrap: "wrap",
-                }}
-              >
-                {experience.skills.map((skill) => (
-                  <Tag>{skill}</Tag>
-                ))}
-              </div>
-            </ExperienceBox>
-          ))}
+          <TimelineComponent />
         </RightContainer>
       </ExperienceContainer>
     </PageContainer>
