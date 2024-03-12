@@ -39,8 +39,9 @@ const RightContainer = styled("div")({
   "@media screen and (max-width:720px)": {
     width: "95%",
     height: "85%",
-    alignItems: "center",
+    alignItems: "left",
     flexDirection: "column",
+    overflowY: "scroll",
   },
 });
 

@@ -1,3 +1,5 @@
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/system";
 import React from "react";
 import { Content } from "../about/styles";
 import { Heading } from "../experience/styles";
@@ -5,11 +7,21 @@ import { PageContainer } from "../globalStyles";
 import { LearnMoreButton } from "../landing/styles";
 import ContactImg from "./contact.svg";
 import { ContactCard, ContactContainer, FooterContainer } from "./styles";
+
 const Contact = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <PageContainer>
       <ContactContainer>
-        <img src={ContactImg} style={{ width: "40%", height: "60%" }} />
+        <img
+          src={ContactImg}
+          style={{
+            width: "40%",
+            height: "60%",
+            display: !matches ? "none" : "block",
+          }}
+        />
         <ContactCard>
           <Heading>Contact Me</Heading>
 

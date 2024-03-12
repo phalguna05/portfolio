@@ -72,7 +72,7 @@ const ContentBox = styled("div")({
   overflow: "hidden",
   "@media screen and (max-width:720px)": {
     height: "90%",
-    width: "90%",
+    width: "100%",
     opacity: "1",
   },
 });
@@ -118,18 +118,13 @@ const Content = styled(Typography)({
 });
 
 const ImgContainer = styled("img")({
-  width: "100%",
-  height: "55vh",
-  borderRadius: "50%",
-  cursor: "pointer",
-  backgroundColor: "#001F3F",
-  boxShadow:
-    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
-  // mixBlendMode: "plus-lighter",
+  width: "40vw",
+  height: "70vh",
   "@media screen and (max-width:720px)": {
     display: "none",
   },
 });
+
 export {
   AboutContainer,
   HeadingContainer,

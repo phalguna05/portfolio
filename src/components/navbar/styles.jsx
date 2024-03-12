@@ -1,9 +1,9 @@
 import { IconButton, styled, Typography } from "@mui/material";
 import { keyframes } from "@mui/system";
 
-const NavigationContainer = styled("div")(({ open }) => ({
+const NavigationContainer = styled("div")({
   width: "100%",
-  height: open ? "35vh" : "7vh",
+  height: "7vh",
   display: "flex",
   overflow: "hidden",
   top: "0",
@@ -12,7 +12,7 @@ const NavigationContainer = styled("div")(({ open }) => ({
   "@media screen and (max-width:720px)": {
     flexDirection: "column",
   },
-}));
+});
 
 const InnerNavContainer = styled("div")({
   width: "100%",
@@ -119,17 +119,17 @@ const squareAnimation = keyframes`
   }
 `;
 
-const Circle = styled("div")`
-  width: 1.5vw;
-  height: 1.5vw;
-  background-color: blue;
-  border-radius: 50%;
-  animation: ${squareAnimation} 4s infinite;
-  @media screen and (max-width: 720px) : {
-    width: 5vw;
-    height: 5vw;
-  }
-`;
+const Circle = styled("div")({
+  width: "1.5vw",
+  height: "1.5vw",
+  backgroundColor: "blue",
+  borderRadius: "50%",
+  animation: `${squareAnimation} 4s infinite`,
+  "@media screen and (max-width: 720px)": {
+    width: "5vw",
+    height: "5vw",
+  },
+});
 
 export {
   NavigationContainer,

@@ -7,6 +7,7 @@ import {
   Content,
   ContentBox,
   ContentContainer,
+  ImgContainer,
   RightTextContainer,
 } from "./styles";
 
@@ -16,7 +17,7 @@ const About = () => {
       <AboutContainer>
         <ContentContainer>
           <ContentBox elevation={3}>
-            <img style={{ width: "40vw", height: "70vh" }} src={AboutMe} />
+            <ImgContainer src={AboutMe} />
             <RightTextContainer>
               <Typography
                 sx={{

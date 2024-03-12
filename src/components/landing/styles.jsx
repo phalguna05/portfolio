@@ -18,6 +18,9 @@ const WallpaperContainer = styled("img")({
   display: "flex",
   width: "50%",
   height: "100%",
+  "@media screen and (max-width:720px)": {
+    display: "none",
+  },
 });
 
 const TitleContainer = styled("div")({
@@ -29,7 +32,7 @@ const TitleContainer = styled("div")({
   alignItems: "center",
   marginTop: "25vh",
   "@media screen and (max-width:720px)": {
-    width: "90%",
+    width: "100%",
     alignItems: "center",
     height: "40%",
     textAlign: "center",

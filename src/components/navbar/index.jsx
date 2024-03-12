@@ -1,5 +1,6 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
+import Dialog from "./Dialog";
 import {
   Circle,
   InnerNavContainer,
@@ -45,8 +46,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <NavigationContainer open={open}>
+      {open && <Dialog open={open} handleClose={handleClose} />}
       <InnerNavContainer>
         <div style={{ display: "flex", alignItems: "center" }}>
           <Circle />
@@ -54,7 +60,7 @@ const Navbar = () => {
         </div>
 
         <MenuButton onClick={() => setOpen(!open)}>
-          <MenuIcon fontSize="large" />
+          <MenuIcon fontSize="large" sx={{ color: "white" }} />
         </MenuButton>
         <NavItemsContainer>
           {Links.map((link, idx) => (

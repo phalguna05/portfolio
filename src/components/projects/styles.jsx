@@ -95,6 +95,9 @@ const ProjectTitle = styled(Typography)({
   fontWeight: "900",
   fontFamily: "'Inter', sans-serif bold",
   display: "flex",
+  "@media screen and (max-width:720px)": {
+    fontSize: "3vw",
+  },
 });
 
 const Content = styled(Typography)({

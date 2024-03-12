@@ -1,3 +1,5 @@
+import { useTheme } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import React from "react";
 import { HeadingContainer } from "../about/styles";
 import { Heading } from "../experience/styles";
@@ -15,6 +17,9 @@ import {
 } from "./styles";
 
 const Projects = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <PageContainer>
       <ProjectsContainer>
@@ -25,8 +30,19 @@ const Projects = () => {
           {projects.map((project, idx) => (
             <ProjectBox
               style={{
-                alignSelf: idx % 2 ? "flex-end" : "flex-start",
-                borderRadius: idx % 2 ? "10px 40px" : "40px 10px",
+                alignSelf: matches
+                  ? idx % 2
+                    ? "flex-end"
+                    : "flex-start"
+                  : "center",
+                borderRadius:
+                  idx % 2
+                    ? matches
+                      ? "10px 40px"
+                      : "10px"
+                    : matches
+                    ? "40px 10px"
+                    : "10px",
               }}
             >
               <ImageContainer>
